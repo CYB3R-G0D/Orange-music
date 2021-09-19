@@ -53,12 +53,17 @@
                 android:id="@+id/seekbar"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:foregroundGravity="center"
-                android:layout_centerInParent="true"
                 android:layout_alignParentBottom="true"
-                android:layout_margin="20dp"
-                android:layout_marginBottom="20dp">
-            </SeekBar>
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:clickable="true"
+                android:drawingCacheQuality="auto"
+                android:foregroundGravity="center"></SeekBar>
 
             <TextView
                 android:id="@+id/txtstart"
@@ -96,50 +101,52 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <Button
                 android:id="@+id/playbtn"
-                android:layout_width="70dp"
+                android:layout_width="65dp"
                 android:layout_height="70dp"
-                android:gravity="center"
                 android:layout_centerInParent="true"
-                android:background="@drawable/ic_baseline_pause_circle_filled_24">
-            </Button>
+                android:background="@drawable/ic_baseline_pause_circle_filled_24"
+                android:gravity="center"
+                android:onClick="playToast"></Button>
+
             <Button
                 android:id="@+id/btnnext"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_centerInParent="true"
                 android:layout_toRightOf="@id/playbtn"
-                android:gravity="center"
                 android:background="@drawable/ic_baseline_skip_next_24"
-                android:layout_centerInParent="true">
-            </Button>
+                android:gravity="center"></Button>
+
             <Button
                 android:id="@+id/btnprev"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_centerInParent="true"
                 android:layout_toLeftOf="@id/playbtn"
-                android:gravity="center"
                 android:background="@drawable/ic_baseline_skip_previous_24"
-                android:layout_centerInParent="true">
-            </Button>
+                android:gravity="center"></Button>
+
             <Button
                 android:id="@+id/btnff"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_centerInParent="true"
                 android:layout_toRightOf="@id/btnnext"
-                android:gravity="center"
                 android:background="@drawable/ic_baseline_fast_forward_24"
-                android:layout_centerInParent="true">
-            </Button>
+                android:gravity="center"></Button>
+
             <Button
                 android:id="@+id/btnfr"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:layout_centerInParent="true"
                 android:layout_toLeftOf="@id/btnprev"
-                android:gravity="center"
                 android:background="@drawable/ic_baseline_fast_rewind_24"
-                android:layout_centerInParent="true">
-            </Button>
+                android:gravity="center"></Button>
+
         </RelativeLayout>
     </LinearLayout>
 </LinearLayout>
